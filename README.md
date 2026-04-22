@@ -1,4 +1,3 @@
-# ollama_open-webui
 ## Ollama
 
 ### Шаг 1 — установить Ollama:
@@ -20,7 +19,7 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl restart ollama
 ```
-** Проверка: **
+**Проверка:**
 ```
 ss -tlnp | grep 11434
 ```
@@ -53,24 +52,24 @@ PARAMETER num_gpu 99
 PARAMETER num_ctx 2048
 EOF
 ```
-** ollama create: **
+**ollama create:**
 
 ```
 ollama create qwen-coder-3b -f ~/ai_infratest/modelfiles/qwen-coder-3b
 ollama create qwen-coder-7b -f ~/ai_infratest/modelfiles/qwen-coder-7b
 ollama create deepseek-r1-1.5b -f ~/ai_infratest/modelfiles/deepseek-r1
 ```
-** Проверка: **
+**Проверка:**
 ```
 ollama list
 ```
 
 ### Шаг 4 — быстрый тест что модель работает на GPU:
-** Терминал №1: **
+**Терминал №1:**
 ```
 ollama run qwen-coder-3b "напиши hello world на C"
 ```
-** Терминал №2: **
+**Терминал №2:**
 ```
 // Проверить что LLM работает на GPU
 nvidia-smi
@@ -103,7 +102,7 @@ EOF
 cd ~/ai_infratest/docker
 docker compose up -d
 ```
-** Проверка: **
+**Проверка:**
 ```
 docker ps
 curl -s -o /dev/null -w "%{http_code}" http://localhost:3000
