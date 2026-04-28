@@ -104,6 +104,7 @@ docker compose up -d
 ```
 **Проверка:**
 ```
+// http://192.168.0.79:3000
 docker ps
 curl -s -o /dev/null -w "%{http_code}" http://localhost:3000
 ```
