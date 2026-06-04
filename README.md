@@ -1637,7 +1637,7 @@ num_ctx=8192:  RAG + история + агент с 5-6 итерациями →
 
 ---
 
-### Вариант 1 - Жирненько: RTX PRO 4500 Blackwell 32GB GDDR7 (примерно 300к)
+### Вариант 1 - Жирненько: [RTX PRO 4500 Blackwell 32GB GDDR7](https://serverflow.ru/catalog/komplektuyushchie/videokarty/nvidia-rtx-pro-4500-blackwell-server-edition/) (примерно 360к)
 
 ```
 VRAM:          32 GB GDDR7
