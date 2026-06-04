@@ -1788,4 +1788,5 @@ ChromaDB данные:            ~5 GB
 
 ---
 
-
+https://infostart.ru/1c/articles/2356727/
+https://github.com/andromanpro/1c-ai-connector
